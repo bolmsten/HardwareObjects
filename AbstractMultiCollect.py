@@ -85,7 +85,6 @@ class AbstractMultiCollect(object):
             self.bl_control.detector.set_detector_mode(detector_mode)
 
 
-    @abc.abstractmethod
     @task
     def set_transmission(self, transmission_percent):
         pass
@@ -143,7 +142,6 @@ class AbstractMultiCollect(object):
         pass
 
 
-    @abc.abstractmethod
     @task
     def prepare_intensity_monitors(self):
         pass
@@ -278,7 +276,6 @@ class AbstractMultiCollect(object):
       pass
 
 
-    @abc.abstractmethod
     def get_cryo_temperature(self):
       pass
 
